@@ -7,10 +7,10 @@ jobs:
     name: Gitlab Sync
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@1
         with:
           fetch-depth: 0
-      - uses: action-pack/gitlab-sync@v3
+      - uses: action-pack/gitlab-sync@v1
         with:
           username: chesnokovtest
           url: https://gitlab.com/chesnokovtest/obsidian.git
